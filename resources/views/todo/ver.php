@@ -12,7 +12,7 @@
         <p><label>Prioridade:</label><span class="alta">Alta</span></p>
     </div>
     <div class="pure-control-group">
-        <p><label>Data de Previsão:</label> 15/08/2015</p>
+        <p><label>Data de Previsão:</label> #DATA</p>
     </div>
     <p><input type="submit" class="pure-button pure-button-primary" value="Editar"></p>
 </div>
