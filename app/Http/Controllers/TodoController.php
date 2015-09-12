@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use App\Models\Todo;
 use Illuminate\Http\Request;
@@ -34,7 +35,6 @@ class TodoController extends Controller
     public function postInsert(Request $req)
     {
         $todo = Todo::create($req->request->all());
-        $todo->prioridade = 10;
         if ($todo->valid()) {
             $todo->save();
             return redirect('todo/lista');
