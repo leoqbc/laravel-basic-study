@@ -27,4 +27,8 @@ class Todo extends Model
         );
     }
     
+    public function setPrevisaoAttribute($data)
+    {
+        $this->previsao = date('Y-m-d H:i:s', strtotime($data));
+    }
 }

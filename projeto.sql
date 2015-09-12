@@ -4,6 +4,6 @@ create table todos
 	titulo varchar(60) not null,
 	descricao varchar(255) not null,
 	prioridade enum('1', '2', '3') not null,
-	previsao datetime not null,
+	previsao timestamp not null,
 	concluido tinyint default 0
 );

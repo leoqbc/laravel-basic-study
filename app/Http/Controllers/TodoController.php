@@ -34,7 +34,7 @@ class TodoController extends Controller
     
     public function postInsert(Request $req)
     {
-        $todo = Todo::create($req->request->all());
+        $todo = new Todo($req->request->all());
         if ($todo->valid()) {
             $todo->save();
             return redirect('todo/lista');
